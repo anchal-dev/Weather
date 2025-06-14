@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CloudNine - Weather App</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+  
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <h1 class="logo">🌥️ CloudNine</h1>
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#weather">Weather</a>
+        <a href="#about">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Discover the <span class="highlight">WEATHER</span> anywhere, anytime!</h1>
+      <p>Stay updated with real-time reports and plan your EVENTS & TRIPS effortlessly!</p>
+      <button class="check-btn" onclick="document.getElementById('weather').scrollIntoView({behavior: 'smooth'})">CHECK NOW!</button>
+    </div>
+    <!-- Slideshow Container -->
+    <div class="slideshow-container">
+      <img class="slide" src="https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=400&h=300&fit=crop" alt="Weather Image 1">
+      <img class="slide" src="https://plus.unsplash.com/premium_photo-1726260210644-d89d350c5242?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHdlYXRoZXIlMjBmb3JlY2FzdCUyMHJlbGF0ZWQlMjBpbWFnZXN8ZW58MHx8MHx8fDA%3D" alt="Weather Image 2">
+      <img class="slide" src="https://images.unsplash.com/photo-1623044403433-0f9ce3a92fed?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Weather Image 3">
+    </div>
+  </section>
+    
+  <!-- Weather Section -->
+  <section id="weather" class="weather-container">
+    <div class="weather-header">
+      <div>
+        <div id="day"></div>
+        <div id="date"></div>
+      </div>
+    </div>
+    <input type="text" id="location" placeholder="🌍 Enter City Name">
+    <button id="getWeather">Search</button>
+    <div id="weatherInfo" class="weather-info">
+      <p>Enter a city name to get weather information</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="about-content">https
+        <h1>I am a <br> <span class="highlight">WEB DEVELOPER</span> and LEARNER</h1>
+        <p>Welcome to my WORLD!</p>
+        <button class="btn">About me</button>
+    </div>
+    <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="About Me Image">
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/anchal-gupta-758796287/"><img src="https://cdn.freebiesupply.com/logos/large/2x/linkedin-icon-logo-png-transparent.png" alt="LinkedIn"></a>
+      <a href="https://www.instagram.com/anchal_gupta0903/profilecard/?igsh=a2h2eGV4NDQ2eHBr"><img src="https://img.freepik.com/premium-vector/modern-badge-logo-instagram-icon_578229-124.jpg?semt=ais_hybrid" alt="Instagram"></a>
+      <a href="https://github.com/anchal-dev"><img src="https://tse1.mm.bing.net/th?id=OIP.dI0kZZ9ysBy73rRuxF0pPQHaHa&pid=Api&P=0&h=180" alt="Email"></a>
+    </div>
+    <p class="footer-text">Created with 🖤 by Anchal</p>
+  </footer>
+
+  <script src="weather.js"></script>
+</body>
+</html>
